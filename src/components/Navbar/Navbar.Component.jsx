@@ -1,5 +1,45 @@
 import React from "react";
+import { BiChevronDown, BiMenu, BiSearch} from 'react-icons/bi';
 
+function NavSm() {
+    return <>
+    <div className="text-white flex item-center justify-between">
+        <div>
+            <h3 className="text-xl font-bold">It All Starts Here!!!</h3>
+            <span className="text-gray-400 text-xs flex item-center cursor-pointer hover: text-white">
+                Delhi NCR<BiChevronDown />
+                </span>
+        </div>
+        <div className="w-8 h-8">
+            <BiSearch className="w-full h-full" />
+        </div>
+    </div>
+    </>
+}
+function NavMd() {
+    return <>
+    <div className="w-full flex item-center gap-3 bg-white px-3 py-1 rounded-md">
+        <BiSearch />
+        <input type="search" className="w-full bg-transparent border-none focus: outline-none" />
+    </div>
+    </>
+}
+function NavLg() {
+    return <>
+    <div className="container flex mx-auto item-center gap-3 bg-white px-4 justify-between">
+        <div className="flex item-center w-1/2 gap-3">
+            <div className="w-10 h-10">
+                <img
+                src="https://i.ibb.co/zPBYW3H/imgbin-bookmyshow-office-android-ticket-png.png"
+                alt="logo"
+                className="w-full h-full" />
+            </div>
+        </div>
+    </div>
+    </>
+}
+
+// Main Component
 const Navbar = () =>{
     return <div>Navbar</div>
 }
