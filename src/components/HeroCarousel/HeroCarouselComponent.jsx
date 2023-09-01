@@ -85,7 +85,7 @@ const HeroCarousel =() =>{
             ))}
           </HeroSlider>
         </div>
-        <div className="hidden lg:block">
+        <div className=" hidden lg:block">
           <HeroSlider {...settingsLG}>
             {images.map((images,index) => (
               <div className="w-full h-96 px-2 py-3" key={index}>

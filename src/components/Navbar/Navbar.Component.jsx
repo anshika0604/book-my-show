@@ -36,7 +36,7 @@ function NavMd() {
 }
 
 function NavLg() {
-    return <>
+    return (<>
         <div className="container flex mx-auto px-4 items-center justify-between">
             <div className="flex items-center w-1/2 gap-3">
                 <div className="w-10 h-10">
@@ -66,7 +66,7 @@ function NavLg() {
 
             </div>
         </div>
-    </>
+    </>)
 }
 
 // Main Component
@@ -79,7 +79,7 @@ const Navbar = () => {
             </div>
 
             {/* This is for Medium/Tab Screen - NavBar */}
-            <div className="hidden md:flex lg:hidden">
+            <div className=" hidden md:flex lg:hidden">
                 <NavMd />
             </div>
 
