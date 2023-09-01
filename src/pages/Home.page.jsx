@@ -23,7 +23,7 @@ const HomePage = () => {
         <div className="container mx-auto px-4 md:px-12 my-8">
             <PosterSlider 
             title="Recommended Movies"
-            subject="List of Recommended Movies"
+            subTitle="List of Recommended Movies"
             posters={recommendationMovies}
             isDark={false}
             />
@@ -37,7 +37,7 @@ const HomePage = () => {
             </div>
                 <div className='container mx-auto px-4 md:px-12 my-8 flex flex-col gap-3'>
                 <PosterSlider title="Premiers"
-                subject="Brand new relases every Friday"
+                subTitle="Brand new relases every Friday"
                 posters={premierMovies}
                 isDark={true} />
             </div>
@@ -46,7 +46,7 @@ const HomePage = () => {
         <div className="container mx-auto px-4 md:px-12 my-8 flex flex-col gap-3">
             <PosterSlider 
                 title="Online Stream Events"
-                subject=""
+                subTitle=""
                 posters={onlineStreamEvents}
                 isDark={false}
             />
