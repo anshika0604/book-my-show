@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import axios from 'axios';
 // Components
 import EntertainmentCardSlider from '../components/Entertainment/EntertainmentCardComponent'
 import HeroCarousel from '../components/HeroCarousel/HeroCarouselComponent'
@@ -11,6 +12,14 @@ const HomePage = () => {
     const [recommendationMovies, setRecommendationMovies] = useState([])
     const [premierMovies, setPremierMovies] = useState([])
     const [onlineStreamEvents, setOnlineStreamEvents] = useState([])
+
+    useEffect(() =>{
+        const requestTopRatedMovies = async () =>{
+        const getTopRatedMovies = await axios.get("https://api.themoviedb.org/3/movie/top_rated?api_key=3afc1d8f6f85fa0cb4c083529e5a18ae")
+        setRecommendationMovies(getTopRatedMovies.data.results);
+        };
+        requestTopRatedMovies();
+    }, )
 
     return (
         <>
