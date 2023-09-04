@@ -1,6 +1,6 @@
 {
-  "name": "book-my-show",
   "homepage": "http://anshika0604.github.io/book-my-show",
+  "name": "book-my-show",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
